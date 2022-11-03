@@ -1,0 +1,13 @@
+app:
+  name: My app
+  desc: Welcome to ${app.name}
+
+my:
+  greeting: Hello
+  list:
+    values: One, Two
+
+management.endpoints.web.exposure.include: "*"
+spring:
+  config:
+    import: "configserver:http://localhost:8888"
